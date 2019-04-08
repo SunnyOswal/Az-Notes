@@ -4,3 +4,12 @@ High Level Categorization of Data Objects:
 + Storage for VMs (Files,Disks)
 + Structured Data (CosmosDB , AzSQL , SQL DW , Tables)
 + UnStructured Data (Queues , Data lake store , Blobs , MongoDB)
+
+
+
+
+Structure:
++ **BLOB** (Binary Large object)
+  * Account > Container > BLOB (Page/Block)
++ **FILE**
+  * Account > Share > Directory > FILE (Page/Block)
