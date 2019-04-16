@@ -1,8 +1,7 @@
-
+Click the URL and check all troubleshooting pages from the TOC:
 
 + CosmosDB:
 https://docs.microsoft.com/en-us/azure/cosmos-db/troubleshoot-java-async-sdk
-Click the URL and check all troubleshooting pages from the TOC:
 
 + VM:
 https://docs.microsoft.com/en-us/azure/virtual-machines/troubleshooting/
