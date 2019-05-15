@@ -24,6 +24,10 @@ AZ reserves 5 Host IP's for internal use. Therefore x.x.x.x/29 will be the small
   + **VNET Peering** : No Bandwidth limits, no need of Gateways.  
 Traffic movement is private (**not encrypted**), therefore low latency,high bandwidth connection.  
 No downtime when creating peering.  
+It is **nontransitive**.
+    + Only virtual networks that are directly peered can communicate with each other. The virtual networks can't communicate with the peers of their peers.  
+    + Suppose, for example, that your three virtual networks (A, B, C) are peered like this: A <-> B <-> C.  
+    + Resources in A can't communicate with resources in C because that traffic can't transit through virtual network B. If you need communication between virtual network A and virtual network C, you must explicitly peer these two virtual networks.
 
 + **SERVICE CHAINING**  
 Using UDR to control the flow of traffic . Example **Next Hop** from a VNet1 will go to **Virtual appliance** (can be a firewall) in the **peered VNet2**.
